@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contactez-nous</title>
+    <link rel="icon" type="image/png" href="/img/icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+        
+    <!-- Ajouter Font Awesome pour les icônes sociales -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    
+body {
+    
+    background-color: #f5f7f5;
+   
+}
+
+:root {
+    --color-primary: #fafafa;
+    --color-secondary: #000000;
+    --color-tertiary: #d45621;
+    --color-4th: #809131;
+    --color-5th: #aa451a;
+    --color-tertiary-lither: #dd784d;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  
+  
+  
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  
+  /* GENERAL ELEMENTS */
+  /* .section { */
+  
+  /* NAVIGATION */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9rem;
+    width: 100%;
+    padding: 0 6rem;
+    z-index: 100;
+  }
+  /* nav and stickly class at the same time */
+  /* .nav.sticky {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.95);
+  } */
+  
+  .nav__logo {
+    height: 4.5rem;
+    transition: all 0.3s;
+  }
+  
+  .nav__links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .nav__link:link,
+  .nav__link:visited {
+    margin-left: 5rem;
+    padding: 0.2rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: var(--color-secondary);
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s;
+  }
+  
+  .btn__InsCon:link,
+  .btn__InsCon:visited {
+    background-color: var(--color-tertiary);
+  }
+  .btn__InsCon:hover,
+  .btn__InsCon:active {
+    background-color: var(--color-tertiary-lither);
+    color: var(--color-secondary);
+  }
+  
+  .btn__service:link,
+  .btn__service:visited {
+    background-color: none;
+  }
+  
+  /* HEADER */
+  .header {
+    padding: 0 3rem;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header__title {
+    flex: 1;
+    max-width: 130rem;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    row-gap: 3rem;
+    align-content: center;
+    justify-content: center;
+  
+    align-items: start;
+    justify-items: start;
+  }
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+  }
+  
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+  
+  .footer__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #f0a500;
+  }
+  
+  .footer__about,
+  .footer__links,
+  .footer__contact,
+  .footer__socials {
+    line-height: 1.8;
+  }
+  
+  .footer__link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer__link:hover {
+    color: #f0a500;
+  }
+  
+  .footer__social {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 0.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer__social:hover {
+    /*color: #f0a500;*/
+      color: #007bff; /* Couleur au survol */
+      transform: scale(1.2); /* Agrandit l'icône au survol */
+  }
+  
+  .footer__bottom {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 15px;
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+    color: #ccc;
+  }
+
+.contact {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.contact-item {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact-item h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    color:#ffae00;
+}
+
+.contact-icon {
+    width: 24px; /* Ajustez la taille de l'icône */
+    height: auto;
+    margin-right: 10px; /* Espace entre l'icône et le texte */
+}
+
+.contact-item p {
+    margin: 0;
+    color: #555;
+}
+
+.contact-item a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+  </style>
+</head>
+<script>
+  // Ajoute une animation au scroll de la page pour faire apparaître les sections
+  window.addEventListener('scroll', function() {
+      const missionSection = document.getElementById('mission');
+      const sectionPosition = missionSection.getBoundingClientRect().top;
+  
+      // Vérifie si la section Mission est dans la fenêtre visible
+      if (sectionPosition < window.innerHeight) {
+          missionSection.style.opacity = 1;
+          missionSection.style.transform = 'translateY(0)';
+      }
+  });
+  </script>
+<body>
+    <header class="header">
+        <nav class="nav">
+          <a href="./index.html">
+            <img
+              src="img/logo.png"
+              alt="HOMEtask logo"
+              class="nav__logo"
+              id="logo"
+            />
+          </a>
+          <ul class="nav__links">
+          <li class="nav__item">
+              <a class="nav__link btn__service" href="index.html">Acceuil</a>
+            </li>
+            <li class="nav__item">
+            <a class="nav__link btn__contact" href="apropos.html">A propos</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link btn__contact" href="contact.html">Contactez-nous</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link btn__InsCon" href="inscription.html"
+                >Inscription / Connexion</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+    <section class="contact">
+        <h2>Contactez-nous</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3>
+                    <img src="https://th.bing.com/th?id=OIP.oBpbHxLuYDAXqLKAheZkZQHaFo&w=286&h=218&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"  class="contact-icon">
+                    Email
+                </h3>
+                <p><a href="mailto:contact@votre-site.com">hometake@gmailcom</a></p>
+            </div>
+            <div class="contact-item">
+                <h3>
+                    <img src="data:image/jpeg;base64,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" class="contact-icon">
+                    Téléphone
+                </h3>
+                <p><a href="tel:+1234567890">+253 77 23 82 19</a></p>
+            </div>
+            <div class="contact-item">
+                <h3>
+                    <img src="https://th.bing.com/th?id=OIP.F2BS7AMqk5Px4MUYKaAG3gHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"  class="contact-icon">
+                    Adresse
+                </h3>
+                <p>Balbala, Djibouti, 22 19</p>
+            </div>
+            <div class="contact-item">
+                <h3>
+                    <img src="chemin/vers/logo-horaires.png"  class="contact-icon">
+                    Heures d'ouverture
+                </h3>
+                <p>24H/7j</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer class="footer">
+        <div class="footer__container">
+          <!-- Section À propos -->
+          <div class="footer__about">
+            <h3 class="footer__title">À propos</h3>
+            <p>
+              HOMEtask vous offre des services de qualité pour vous simplifier la vie au quotidien.
+              Nous sommes dédiés à répondre à vos besoins de manière rapide et efficace.
+            </p>
+          </div>
+      
+          <!-- Section Liens rapides -->
+          <div class="footer__links">
+            <h3 class="footer__title">Liens rapides</h3>
+            <ul>
+              <li><a href="./index.html" class="footer__link">Accueil</a></li>
+              <li><a href="./service.html" class="footer__link">Services</a></li>
+
+              <li><a href="./contact.html" class="footer__link">Contactez-nous</a></li>
+              <li><a href="inscription.html" class="footer__link">Inscription / Connexion</a></li>
+            </ul>
+          </div>
+      
+          <!-- Section Contact -->
+          <div class="footer__contact">
+            <h3 class="footer__title">Contact</h3>
+            <ul>
+              <li><i class="fas fa-phone"></i> +253 77 16 62 46</li>
+              <li><i class="fas fa-envelope"></i> contact@hometask.com</li>
+              <li><i class="fas fa-map-marker-alt"></i> Balbala, Djibouti</li>
+            </ul>
+          </div>
+      
+          <!-- Section Réseaux sociaux -->
+          <div class="footer__socials">
+            <h3 class="footer__title">Suivez-nous</h3>
+            <a href="#" class="footer__social"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="footer__social"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="footer__social"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="footer__social"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      
+        <!-- Copyright -->
+        <div class="footer__bottom">
+          <p>&copy; 2024 HOMEtask. Tous droits réservés.</p>
+        </div>
+      </footer>
+      <script src="script.js"></script>
+
+</body>
+</html>
