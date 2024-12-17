@@ -25,7 +25,7 @@ if(isset($_POST['bouton']) ){
         $_SESSION['id_utilisateur'] = $user['id']; // Stocker l'ID d'utilisateur' dans la session
 
         // Rediriger vers la page de l'utilisateur
-        header("location:../gestion_projet_complet/interface utilisateur.php");
+        header("location:../Projet-3/interface_utilisateur.php");
     } else {
         // Si l'utilisateur' n'est pas trouvé, vérifier si c'est un administrateur
         $query = mysqli_query($connexion, "SELECT * FROM admin WHERE password_admin='$password' AND email_admin='$email'");
@@ -33,7 +33,7 @@ if(isset($_POST['bouton']) ){
 
         if($num > 0){
             // L'administrateur est trouvé, rediriger vers la page admin
-            header("location:../gestion_projet_complet/index.html");
+            header("location:../Projet-3/interface admin/admin.php");
         } else {
             // Identifiants incorrects
             $Error = "Adresse mail ou mot de passe incorrect";

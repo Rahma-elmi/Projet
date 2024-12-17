@@ -90,7 +90,7 @@
        <!-- Logo -->
        <a href="./index.html" >
           <img
-            src="img/logo.png"
+            src="logo.png"
             alt="HOMEtask logo"
             class="nav__logo"
             id="logo"
@@ -98,7 +98,7 @@
         </a>  
         <nav class="navbar navbar-static-top" role="navigation" >         
             <div class="pull-right">
-             <a href="connexion_rab.php" class="btn btn-default btn-flat">se deconnecter</a>
+             <a href="CONNEXION.PHP.php" class="btn btn-default btn-flat">se deconnecter</a>
             </div>      
           
         </nav>
